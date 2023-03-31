@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        div.gallery {
+          border: 2px solid #ccc;
+        }
+        
+        div.gallery:hover {
+          border: 2px solid rgb(100, 153, 153);
+        }
+        
+        div.gallery img {
+          width: 100%;
+          align-content: space-between;
+          
+        }
+        
+        div.desc {
+          padding: 15px;
+          text-align: center;
+          font-size: 1.5rem;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .responsive {
+          padding: 0 20px;
+          float: left;
+          width: 45%;
+          display: grid;
+
+        }
+        
+        @media only screen and (max-width: 700px) {
+          .responsive {
+            width: 49.99999%;
+            margin: 6px 0;
+          }
+        }
+        
+        @media only screen and (max-width: 500px) {
+          .responsive {
+            width: 100%;
+          }
+        }
+
+        h2 {
+        padding: 20px;
+        text-align: center;
+        background-color: #65b1cf;
+        color: white;
+        font-size: 2rem;
+    }
+        </style>
+
+</head>
+<body>
+    <h2>Gallery</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/poro.jpg">
+      <img src="images/poro.jpg" alt="Poro Point" width="600" height="400">
+    </a>
+    <div class="desc">Poro Point Light House</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/macho.jpg">
+      <img src="images/macho.jpg" alt="Temple" width="600" height="400">
+    </a>
+    <div class="desc">Macho Temple</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/pugad.jpg">
+      <img src="images/pugad.jpg" alt="Adventure" width="600" height="400">
+    </a>
+    <div class="desc">Pugad Adventure</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/surfing.jpg">
+      <img src="images/surfing.jpg" alt="Surfing" width="600" height="400">
+    </a>
+    <div class="desc">Surfing</div>
+  </div>
+</div>
+
+
+    
+</body>
+</html>
+
+

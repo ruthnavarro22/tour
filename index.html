@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SAN JUAN</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+        <section class="toppage">
+            <header>
+                    <h1 class="logo">LA UNION TRAVELS</h1> 
+                    <div class="toggle"></div>       
+            </header>
+ 
+           <video id="bgvideo" autoplay muted loop>
+                 <source src="video/launion.mp4" type="video/mp4">
+            </video>
+         
+            <div class="overlay"></div>               
+                <div class="content">
+                    <h2 class="title"><u> Welcome to La Union </u></h2>
+                    <p class="description">La Union is a province located 270 KM north of Manila, 
+                        the Philippines' city capital. It is bordered on the west by the West Philippine Sea shoreline, 
+                        making it a popular beach destination among local travelers looking for a quick weekend getaway near Manila. 
+                        La Union`s capital city of San Fernando is Ilocos Region`s cultural and commercial center.</p>
+                </div>
+            </section>
+            <div class="menu">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>  
+           
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const toppage = document.querySelector('.toppage')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            toppage.classList.toggle('active')
+        })
+    </script>
+
+
+    </body>
+    <style>
+
+    </style>
+</html>
